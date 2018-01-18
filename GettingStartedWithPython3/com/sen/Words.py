@@ -10,7 +10,7 @@ def fetch_words(self):
     with urlopen('http://public.oed.com/how-to-use-the-oed/what-is-the-oed-online/') as story:
         story_words = []
         for line in story:
-            line_words = line.decode("utf-8").split()
+            line_words = line.decode("UTF-8").split()
             for line_word in line_words:
                 story_words.append(line_word)
      
